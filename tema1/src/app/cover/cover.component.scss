@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  //box-sizing: border;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block;
+  margin: 8px;
+}
+
+.cover-container {
+  position: relative;
+}
+
+.title {
+  font-size: 20px;
+  color: black;
+  padding: 14x 17px;
+  //margin-top: 32vh;
+  text-align: center;
+  vertical-align: center;
+}
