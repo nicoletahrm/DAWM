@@ -1,1 +1,20 @@
-<p>place works!</p>
+<div class="main-container">
+  <div>
+    <h1 style="font-weight: bold; color: green">MOST POPULAR</h1>
+    <hr style="width: 400px; padding: auto; margin: auto" />
+  </div>
+
+  <div class="cards-container">
+    <div *ngFor="let place of places" class="card">
+      <img [src]="place.image" />
+
+      <div class="container">
+        <h4>
+          <b>{{ place.country }}</b>
+        </h4>
+        <p>{{ place.description }}</p>
+        <button class="button-3">VISIT NOW</button>
+      </div>
+    </div>
+  </div>
+</div>

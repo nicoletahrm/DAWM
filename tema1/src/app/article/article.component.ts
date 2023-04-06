@@ -10,28 +10,28 @@ export class ArticleComponent {
   articles: Article[] = [
     {
       id: 1,
-      title: 'Article1',
+      title: 'Article title',
       description:
         'Plan your trip with us and travel around the world with the most affordable packages!',
       topic: 'TRAVEL',
     },
     {
       id: 2,
-      title: 'Article2',
+      title: 'Article title',
       description:
         'Plan your trip with us and travel around the world with the most affordable packages!',
       topic: 'TRAVEL ARANGEMENTS',
     },
     {
       id: 3,
-      title: 'Article3',
+      title: 'Article title',
       description:
         'Plan your trip with us and travel around the world with the most affordable packages!',
       topic: 'OUT PROFESSIONAL GUIDE',
     },
     {
       id: 4,
-      title: 'Article4',
+      title: 'Article title',
       description:
         'Plan your trip with us and travel around the world with the most affordable packages!',
       topic: 'ACTIVITIES',
