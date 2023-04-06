@@ -5,18 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoverComponent } from './cover/cover.component';
 import { FormsModule } from '@angular/forms';
+import { ArticleComponent } from './article/article.component';
+import { PlaceComponent } from './place/place.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CoverComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-  ],
+  declarations: [AppComponent, CoverComponent, ArticleComponent, PlaceComponent],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

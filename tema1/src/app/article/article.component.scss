@@ -1,0 +1,27 @@
+.article-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 60px 300px;
+  text-align: left;
+}
+
+.article {
+  width: 500px;
+  height: 190px;
+  margin: 0 30px 20px;
+}
+
+.article h2 {
+  margin: 0 0 18px 0;
+  color: green;
+}
+
+.article-title {
+  font-weight: bold;
+}
+
+.article-description {
+  color: gray;
+}
