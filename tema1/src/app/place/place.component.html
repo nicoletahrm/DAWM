@@ -1,3 +1,13 @@
+<div>
+  <p class="title2">Search & Book all our destinations</p>
+</div>
+
+<div class="search-bar">
+  <input type="text" placeholder="Search your city" [(ngModel)]="listFilter" />
+</div>
+
+<app-article></app-article>
+
 <div class="main-container">
   <div>
     <h1 style="font-weight: bold; color: green">MOST POPULAR</h1>
@@ -5,15 +15,19 @@
   </div>
 
   <div class="cards-container">
-    <div *ngFor="let place of places" class="card">
+    <div *ngFor="let place of filteredPlaces" class="card">
       <img [src]="place.image" />
 
       <div class="container">
         <h4>
-          <b>{{ place.country }}</b>
+          <b>{{ place.city }}</b>
         </h4>
         <p>{{ place.description }}</p>
-        <button class="button-3">
+        <button
+          class="button-3"
+          (click)="messageEvent(place.city)"
+          [routerLink]="['/city', place.id]"
+        >
           VISIT NOW
         </button>
       </div>

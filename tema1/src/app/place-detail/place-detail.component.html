@@ -1,0 +1,13 @@
+<div class="cards-container">
+  <div *ngIf="place" class="card">
+    <img [src]="place.image" />
+
+    <div class="container">
+      <h4>
+        <b>{{ place.city }}</b>
+      </h4>
+      <p>{{ place.description }}</p>
+      <button class="button-3" (click)="onBack()">BACK</button>
+    </div>
+  </div>
+</div>

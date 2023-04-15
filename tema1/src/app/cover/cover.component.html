@@ -25,20 +25,10 @@
         affordable packages!
       </p>
       <br />
-      <button class="button-3">DISCOVER NOW</button>
+      <a class="button-3" href="https://www.tripcreator.com/">
+        DISCOVER NOW
+      </a>
     </div>
   </div>
-
-  <div>
-    <p class="title2">Search & Book all our destinations</p>
-  </div>
-
-  <div class="search-bar">
-    <input type="text" placeholder="Search your city" />
-  </div>
-
-  <div>
-    <h1 style="font-weight: bold; color: green">OUR SERVICES</h1>
-    <hr style="width: 400px; padding: auto; margin: auto" />
-  </div>
 </div>
+<app-place (messageEvent)="receiveMessage($any($event))"></app-place>

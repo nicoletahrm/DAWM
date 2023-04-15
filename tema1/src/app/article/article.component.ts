@@ -17,7 +17,6 @@ export class ArticleComponent {
     this.placeService.getArticles().subscribe({
       next: (articles) => {
         this.articles = articles;
-        //this.filteredProducts = this.products;
       },
       error: (err) => (this.errorMessage = err),
     });

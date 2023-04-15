@@ -1,37 +1,37 @@
 [
   {
     "id": 1,
-    "country": "VALEKHUM",
+    "city": "VALEKHUM",
     "description": "Plan your trip with us and travel around the world with the most affordable packages!",
     "image": "assets/images/place1.png"
   },
   {
     "id": 2,
-    "country": "SAVEJ VELLY",
+    "city": "SAVEJ VELLY",
     "description": "Plan your trip with us and travel around the world with the most affordable packages!",
     "image": "assets/images/place1.png"
   },
   {
     "id": 3,
-    "country": "SARIGHAT",
+    "city": "SARIGHAT",
     "description": "Plan your trip with us and travel around the world with the most affordable packages!",
     "image": "assets/images/place1.png"
   },
   {
     "id": 4,
-    "country": "THE CITY",
+    "city": "THE CITY",
     "description": "Plan your trip with us and travel around the world with the most affordable packages!",
     "image": "assets/images/place1.png"
   },
   {
     "id": 4,
-    "country": "THE CITY",
+    "city": "THE CITY",
     "description": "Plan your trip with us and travel around the world with the most affordable packages!",
     "image": "assets/images/place1.png"
   },
   {
     "id": 5,
-    "country": "THE CITY",
+    "city": "THE CITY",
     "description": "Plan your trip with us and travel around the world with the most affordable packages!",
     "image": "assets/images/place1.png"
   }

@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class CoverComponent implements OnInit {
   pageTitle: string = 'NEW ADVENTURE';
 
+  receiveMessage(cityName: string): void {
+    this.pageTitle = cityName;
+  }
+
   constructor() {}
 
   ngOnInit(): void {}

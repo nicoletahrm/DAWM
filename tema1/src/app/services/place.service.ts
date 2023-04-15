@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, catchError, tap, throwError } from 'rxjs';
+import { Observable, catchError, map, tap, throwError } from 'rxjs';
 import { Place } from '../interfaces/place';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Article } from '../interfaces/article';
@@ -24,6 +24,12 @@ export class PlaceService {
     return this.http.get<Article[]>(this.artcilesUrl).pipe(
       tap((data) => console.log('All ' + JSON.stringify(data))),
       catchError(this.handleError)
+    );
+  }
+
+  getPlaceById(id: number): Observable<Place | undefined> {
+    return this.getPlaces().pipe(
+      map((products: Place[]) => products.find((p) => p.id === id))
     );
   }
 
