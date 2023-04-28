@@ -1,0 +1,54 @@
+<div>
+  <form nz-form [formGroup]="personForm">
+    <nz-form-item>
+      <nz-form-label [nzSpan]="6" nzFor="name">Name</nz-form-label>
+      <nz-form-control [nzSpan]="14">
+        <nz-input-group nxPrefixIcon="person">
+          <input
+            nz-input
+            name="name"
+            type="text"
+            id="name"
+            formControlName="name"
+          />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="6" nzFor="age">Age</nz-form-label>
+      <nz-form-control [nzSpan]="14">
+        <nz-input-group nxPrefixIcon="person">
+          <input
+            nz-input
+            name="age"
+            type="number"
+            id="age"
+            formControlName="age"
+          />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="6" nzFor="address">Address</nz-form-label>
+      <nz-form-control [nzSpan]="14">
+        <nz-input-group nxPrefixIcon="address">
+          <input
+            nz-input
+            name="address"
+            type="text"
+            id="address"
+            formControlName="address"
+          />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+
+  <button nz-button nzType="primary" type="submit" (click)="addPerson()">
+    Add person
+  </button>
+
+  <p>{{ message }}</p>
+</div>

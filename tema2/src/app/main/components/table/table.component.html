@@ -1,0 +1,28 @@
+<div class="table-container">
+  <div class="table-operations">
+    <button nz-button nzType="primary" [routerLink]="'/add'">Add</button>
+  </div>
+
+  <nz-table [nzData]="persons" [nzPageSize]="5">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of persons">
+        <td nzLeft>{{ person.name }}</td>
+        <td>{{ person.age }}</td>
+        <td>{{ person.address }}</td>
+        <td>
+          <button nz-button nzType="primary" [routerLink]="['/edit', person.name]"  (click)="editPerson(person)">
+            <i nz-icon nzType="edit"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+</div>
