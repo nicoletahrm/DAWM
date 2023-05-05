@@ -8,6 +8,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class PersonService {
   persons: Person[];
+  personToGet: Person[] = [
+    { name: 'John Doe', age: 25, address: '123 Main St' },
+    { name: 'Jane Smith', age: 30, address: '456 Elm St' },
+    { name: 'Bob Johnson', age: 40, address: '789 Oak St' },
+    { name: 'Alice Williams', age: 35, address: '101 Pine St' },
+    { name: 'Mike Brown', age: 50, address: '222 Maple St' },
+  ];
   baseUrl: string = 'assets/api/persons.json';
 
   readonly httpOptions = {

@@ -49,6 +49,8 @@ export class AddPersonComponent implements OnInit {
   }
 
   addPerson() {
+    
+
     this.message = this.newPerson.name;
     this.personService.addPerson(this.newPerson).subscribe();
   }

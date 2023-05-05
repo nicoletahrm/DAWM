@@ -9,8 +9,9 @@ import { MainRoutingModule } from './main-routing.module';
 import { AddPersonComponent } from './components/add-person/add-person.component';
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzFormModule } from 'ng-zorro-antd/form';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { NzCardModule } from 'ng-zorro-antd/card';
 
 @NgModule({
   declarations: [DashboardComponent, TableComponent, AddPersonComponent],
@@ -24,6 +25,9 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
     NzIconModule,
     NzFormModule,
     NzCheckboxModule,
+    NzCardModule,
+    FormsModule,
   ],
+  exports: [TableComponent],
 })
 export class MainModule {}

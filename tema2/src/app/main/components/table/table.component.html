@@ -1,9 +1,8 @@
 <div class="table-container">
-  <div class="table-operations">
-    <button nz-button nzType="primary" [routerLink]="'/add'">Add</button>
-  </div>
-
-  <nz-table [nzData]="persons" [nzPageSize]="5">
+  <!-- <div class="table-operations"> -->
+  <button nz-button nzType="primary" [routerLink]="'/add'">Add</button>
+  <!-- </div> -->
+  <nz-table #basicTable [nzData]="persons" [nzPageSize]="5">
     <thead>
       <tr>
         <th>Name</th>
@@ -18,7 +17,12 @@
         <td>{{ person.age }}</td>
         <td>{{ person.address }}</td>
         <td>
-          <button nz-button nzType="primary" [routerLink]="['/edit', person.name]"  (click)="editPerson(person)">
+          <button
+            nz-button
+            nzType="primary"
+            [routerLink]="['/edit', person.name]"
+            (click)="editPerson(person)"
+          >
             <i nz-icon nzType="edit"></i>
           </button>
         </td>
